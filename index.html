@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Assistant</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    /* Contenedor para centrar y dar espacio entre botones */
+    .contenedor-botones {
+      display: flex;
+      flex-direction: column; /* Cambia a 'row' si prefieres ponerlos de lado */
+      align-items: center;
+      gap: 15px; /* Espacio uniforme entre cada botón */
+      margin-top: 20px;
+    }
+
+    .btn-diagrama {
+      display: inline-block;
+      min-width: 260px; /* Tamaño uniforme para todos los botones */
+      padding: 12px 24px;
+      background-color: #007bff;
+      color: #ffffff;
+      text-decoration: none;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      transition: background-color 0.2s ease, transform 0.1s ease;
+    }
+
+    .btn-diagrama:hover {
+      background-color: #0056b3;
+    }
+
+    .btn-diagrama:active {
+      transform: scale(0.98);
+    }
+  </style>
+</head>
+<body>
+
+  <h1 style="text-align: center;">Assistant</h1>
+  
+  <div class="contenedor-botones">
+    <a href="file:///C:/Users/aleja/OneDrive/Documents/TCD/assistan.html" class="btn-diagrama">
+      Diagrama general 1
+    </a>
+    
+    <a href="file:///C:/Users/aleja/OneDrive/Documents/TCD/assistan_economi.drawio.html" class="btn-diagrama">
+      Diagrama flujo económico 2
+    </a>
+
+    <a href="file:///C:/Users/aleja/OneDrive/Documents/TCD/costumers.html" class="btn-diagrama">
+      Costumers 3
+    </a>
+  </div>
+
+</body>
+</html>
