@@ -2,64 +2,111 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Assistant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assistant - Warm Edition</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    /* Reset de estilos básicos */
+    * {
+      box-sizing: border-box;
       margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
+    }
+
+    /* Fondo de página con degradado cálido */
+    body {
+      min-height: 100vh;
+      background: radial-gradient(circle at center, #faf0e6 0%, #e8dccb 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
       padding: 20px;
     }
 
-    /* Contenedor para centrar y dar espacio entre botones */
+    /* Tarjeta contenedor */
+    .card {
+      background: #fffbf0; /* Fondo crema muy claro */
+      padding: 50px 40px;
+      border-radius: 24px;
+      box-shadow: 0 15px 35px -5px rgba(121, 85, 72, 0.1), 0 10px 15px -10px rgba(121, 85, 72, 0.05);
+      width: 100%;
+      max-width: 440px;
+      text-align: center;
+      border: 1px solid rgba(215, 201, 191, 0.3);
+    }
+
+    /* Título chocolate cálido */
+    .title {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: #3e2723;
+      margin-bottom: 8px;
+      letter-spacing: -0.5px;
+    }
+
+    /* Subtítulo marrón suave */
+    .subtitle {
+      font-size: 0.95rem;
+      color: #6d4c41;
+      margin-bottom: 35px;
+    }
+
+    /* Contenedor de botones vertical */
     .contenedor-botones {
       display: flex;
-      flex-direction: column; /* Cambia a 'row' si prefieres ponerlos de lado */
-      align-items: center;
-      gap: 15px; /* Espacio uniforme entre cada botón */
-      margin-top: 20px;
+      flex-direction: column;
+      gap: 16px;
     }
 
+    /* Estilo base de los botones terracota */
     .btn-diagrama {
-      display: inline-block;
-      min-width: 260px; /* Tamaño uniforme para todos los botones */
-      padding: 12px 24px;
-      background-color: #007bff;
-      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px 24px;
+      background-color: #bf360c; /* Terracota profundo */
+      color: #fff8e1; /* Texto crema pálido */
       text-decoration: none;
-      text-align: center;
-      font-size: 16px;
-      font-weight: bold;
-      border-radius: 6px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-      transition: background-color 0.2s ease, transform 0.1s ease;
+      font-weight: 700;
+      font-size: 1.05rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(191, 54, 12, 0.15);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
+    /* Interacciones de hover */
     .btn-diagrama:hover {
-      background-color: #0056b3;
+      background-color: #e65100; /* Naranja terracota más vibrante */
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 10px 25px rgba(230, 81, 0, 0.3);
     }
 
+    /* Interacciones de active (clic) */
     .btn-diagrama:active {
-      transform: scale(0.98);
+      background-color: #8d1d0c; /* Terracota más profundo */
+      transform: translateY(-1px) scale(1.0);
+      box-shadow: 0 4px 10px rgba(191, 54, 12, 0.2);
     }
   </style>
 </head>
 <body>
 
-  <h1 style="text-align: center;">Assistant</h1>
-  
-  <div class="contenedor-botones">
-<a href="assistan.html" class="btn-diagrama">
- Diagrama general 1
-</a>
+  <main class="card">
+    <h1 class="title">Assistant</h1>
+    <p class="subtitle">Selecciona una opción para acceder</p>
 
-<a href="assistan_economi.drawio.html" class="btn-diagrama">
- Diagrama flujo económico 2
-</a>
-
-<a href="costumers.html" class="btn-diagrama">
- Costumers 3
-</a>
-</div>
+    <div class="contenedor-botones">
+      <a href="assistan.html" class="btn-diagrama">
+        Diagrama general 1
+      </a>
+      <a href="assistan_economi.drawio.html" class="btn-diagrama">
+        Diagrama flujo económico 2
+      </a>
+      <a href="costumers.html" class="btn-diagrama">
+        Costumers 3
+      </a>
+    </div>
+  </main>
 
 </body>
 </html>
